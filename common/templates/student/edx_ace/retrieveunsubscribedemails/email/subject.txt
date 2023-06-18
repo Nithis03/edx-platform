@@ -1,0 +1,4 @@
+{% load i18n %}
+{% autoescape off %}
+{% blocktrans trimmed %}Unsubscribed Emails from {{ start_date }} to {{ end_date }} {% endblocktrans %}
+{% endautoescape %}

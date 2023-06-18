@@ -46,3 +46,10 @@ class ProctoringRequirements(BaseMessageType):
         super().__init__(*args, **kwargs)
 
         self.options['transactional'] = True
+
+
+class RetrieveUnsubscribedEmails(BaseMessageType):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self.options['transactional'] = True

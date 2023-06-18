@@ -1,0 +1,7 @@
+{% load i18n %}{% autoescape off %}
+
+{% if csv_file_path %}
+    {% blocktrans %}Attached is the CSV file: {{ csv_file_path }}.{% endblocktrans %}
+{% endif %}
+
+{% endautoescape %}

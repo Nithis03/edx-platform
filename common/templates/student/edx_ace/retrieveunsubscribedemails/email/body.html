@@ -1,0 +1,9 @@
+{% extends 'ace_common/edx_ace/common/base_body.html' %}
+
+{% load i18n %}
+{% load static %}
+{% block block_content %}
+    {% if csv_file_path %}
+        <p>{% blocktrans %}Attached is the CSV file: <a href="{{ csv_file_path }}">{{ csv_file_path }}{% endblocktrans %}</a>.</p>
+    {% endif %}
+{% endblock %}
