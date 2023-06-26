@@ -8,7 +8,7 @@ from django.db import transaction
 from edx_django_utils.monitoring import set_code_owner_attribute
 
 from common.djangoapps.student.models import CourseEnrollment
-from openedx.core.djangoapps.notifications.models import CourseNotificationPreference, NotificationPreference
+from openedx.core.djangoapps.notifications.models import CourseNotificationPreference
 
 logger = get_task_logger(__name__)
 
