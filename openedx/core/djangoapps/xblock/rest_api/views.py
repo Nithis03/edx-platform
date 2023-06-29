@@ -7,6 +7,7 @@ Studio APIs cover use cases like adding/deleting/editing blocks.
 
 from corsheaders.signals import check_request_enabled
 from django.contrib.auth import get_user_model
+from django.db.transaction import atomic
 from django.http import Http404
 from django.views.decorators.clickjacking import xframe_options_exempt
 from django.views.decorators.csrf import csrf_exempt
@@ -14,6 +15,7 @@ from rest_framework import permissions
 from rest_framework.decorators import api_view, permission_classes  # lint-amnesty, pylint: disable=unused-import
 from rest_framework.exceptions import PermissionDenied, AuthenticationFailed, NotFound
 from rest_framework.response import Response
+from rest_framework.views import APIView
 from xblock.django.request import DjangoWebobRequest, webob_to_django_response
 
 from opaque_keys import InvalidKeyError
@@ -168,3 +170,15 @@ def cors_allow_xblock_handler(sender, request, **kwargs):  # lint-amnesty, pylin
 
 
 check_request_enabled.connect(cors_allow_xblock_handler)
+
+
+@view_auth_classes()
+class BlockFieldsView(APIView):
+
+    @atomic
+    def get(self, request, usage_key_str):
+        pass
+
+    @atomic
+    def post(self, request, usage_key_str):
+        pass
