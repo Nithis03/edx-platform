@@ -40,4 +40,5 @@ jobs:
 
       - name: Start LMS and Django Apps
         run: |
-          cd lms/djangoapps/course_api  # Replace with the path to your Django project director
+          cd lms/djangoapps/bulk_email
+          cd lms/djangoapps/course_api
