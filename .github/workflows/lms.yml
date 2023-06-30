@@ -38,10 +38,36 @@ jobs:
       #     cd lms  # Replace with the path to your Django project directory
       #     python manage.py collectstatic --noinput
 
+      - name: Deploy badges
+        run: |
+          cd lms/djangoapps/badges
+          
+      - name: Deploy branding
+        run: |
+          cd lms/djangoapps/branding
+
+          "lms/djangoapps/certificates/",
+
       - name: Deploy bulk_email
         run: |
           cd lms/djangoapps/bulk_email
 
-      - name: Deploy bulk_email
+      - name: Deploy bulk_enroll
+        run: |
+          cd lms/djangoapps/bulk_enroll
+
+      - name: Deploy bulk_user_retirement
+        run: |
+          cd lms/djangoapps/bulk_user_retirement
+
+      - name: Deploy ccx
+        run: |
+          cd lms/djangoapps/ccx
+
+      - name: Deploy certificates
+        run: |
+          cd lms/djangoapps/certificates
+
+      - name: Deploy course_api
         run: |
           cd lms/djangoapps/course_api
