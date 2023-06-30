@@ -38,6 +38,10 @@ jobs:
       #     cd lms  # Replace with the path to your Django project directory
       #     python manage.py collectstatic --noinput
 
-      - name: Start LMS and Django Apps
+      - name: Deploy bulk_email
         run: |
           cd lms/djangoapps/bulk_email
+
+      - name: Deploy bulk_email
+        run: |
+          cd lms/djangoapps/course_api
