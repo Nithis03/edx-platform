@@ -40,5 +40,5 @@ jobs:
 
       - name: Start LMS and Django Apps
         run: |
-          cd lms  # Replace with the path to your Django project directory
+          cd lms/djangoapps/course_api  # Replace with the path to your Django project directory
           python manage.py runserver
