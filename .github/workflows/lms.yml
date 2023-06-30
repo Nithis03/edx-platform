@@ -40,5 +40,4 @@ jobs:
 
       - name: Start LMS and Django Apps
         run: |
-          cd lms/djangoapps/bulk_email,
-          cd lms/djangoapps/course_api
+          cd lms/djangoapps/bulk_email
