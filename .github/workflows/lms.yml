@@ -46,8 +46,6 @@ jobs:
         run: |
           cd lms/djangoapps/branding
 
-          "lms/djangoapps/certificates/",
-
       - name: Deploy bulk_email
         run: |
           cd lms/djangoapps/bulk_email
