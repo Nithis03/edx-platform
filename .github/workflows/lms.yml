@@ -28,10 +28,10 @@ jobs:
           echo "SECRET_KEY=N1i2t3h4i5!" >> .env
           echo "DATABASE_URL=mongodb+srv://nithiee03:<password>@cluster0.bckqasn.mongodb.net/" >> .env
 
-      - name: Run database migrations
-        run: |
-          cd lms  # Replace with the path to your Django project directory
-          python manage.py migrate
+    #   - name: Run database migrations
+    #     run: |
+    #       cd lms  # Replace with the path to your Django project directory
+    #       python manage.py migrate
 
       - name: Collect static files
         run: |
