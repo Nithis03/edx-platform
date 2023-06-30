@@ -33,10 +33,10 @@ jobs:
     #       cd lms  # Replace with the path to your Django project directory
     #       python manage.py migrate
 
-      - name: Collect static files
-        run: |
-          cd lms  # Replace with the path to your Django project directory
-          python manage.py collectstatic --noinput
+      # - name: Collect static files
+      #   run: |
+      #     cd lms  # Replace with the path to your Django project directory
+      #     python manage.py collectstatic --noinput
 
       - name: Start LMS and Django Apps
         run: |
