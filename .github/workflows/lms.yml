@@ -69,3 +69,27 @@ jobs:
       - name: Deploy course_api
         run: |
           cd lms/djangoapps/course_api
+
+      - name: Deploy course_goals
+        run: |
+          cd lms/djangoapps/course_goals
+          
+      - name: Deploy course_blocks
+        run: |
+          cd lms/djangoapps/course_blocks
+
+      - name: Deploy course_home_api
+        run: |
+          cd lms/djangoapps/course_home_api
+
+      - name: Deploy course_wiki
+        run: |
+          cd lms/djangoapps/course_wiki
+
+      - name: Deploy coursewarehistoryextended
+        run: |
+          cd lms/djangoapps/coursewarehistoryextended
+
+      - name: debug
+        run: |
+          cd lms/djangoapps/coursewarehistoryextended
